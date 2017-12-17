@@ -1,6 +1,15 @@
 # Love Packer
 Packages up LOVE games for distribution. Currently handles MacOS, Windows, and .love files.
 
+## Install
+Either use:
+
+```$ python setup.py install```
+
+or
+
+```$ pip install lovepacker```
+
 ## About
 This is a simple Python 3.x program used to to quickly package games for distribution.
 
