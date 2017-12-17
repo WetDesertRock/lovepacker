@@ -70,15 +70,15 @@ def loadConfig(options, configpath):
 
 def getDefaultOptions():
     return {
-        "basepath": "~/Desktop/Development/lovegames/LD40/source",
+        "basepath": "",
         "buildpath": "build",
         "cachepath": "~/.lovepacker/cache",
         "followlinks": True,
         "ignorepatterns": ["*.DS_Store", "*.git*"],
         "processors": ['luac'],
         "loveversion": "0.10.2",
-        "gamename": "M",
-        "identifier": "com.wetdesertrock.m_game"
+        "gamename": "unnamed_game",
+        "identifier": "com.unnamed.game"
     }
 
 """ Build directories used """
