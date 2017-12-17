@@ -5,7 +5,7 @@ import subprocess
 import plistlib
 import logging
 
-from downloadmanager import DownloadManager
+from .downloadmanager import DownloadManager
 
 logger = logging.getLogger(__name__)
 

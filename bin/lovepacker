@@ -5,9 +5,9 @@ import argparse
 import json
 import logging
 
-import lovepacker.bundler
-import lovepacker.macpackager
-import lovepacker.winpackager
+import lovepacker.bundler as bundler
+import lovepacker.macpackager as macpackager
+import lovepacker.winpackager as winpackager
 
 # Set up logging
 logging.basicConfig(format='%(levelname)s %(name)s: %(message)s', level=logging.DEBUG)
