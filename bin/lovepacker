@@ -87,7 +87,7 @@ def getDefaultOptions():
         "followlinks": True,
         "ignorepatterns": ["*.DS_Store", "*.git*"],
         "processors": ['luac'],
-        "loveversion": "0.10.2",
+        "loveversion": "0.11.2",
         "gamename": "unnamed_game",
         "identifier": "com.unnamed.game"
     }
