@@ -16,7 +16,7 @@ class MacPackager:
 
     def package(self):
         # Get the package
-        osxfile = self.cache.getFile(self.options['destdir'], osname="macosx-x64", version=self.options['loveversion'])
+        osxfile = self.cache.getFile(self.options['destdir'], osname="mac", version=self.options['loveversion'])
 
         # Calculate paths
         osxpath = os.path.join(self.options['destdir'],osxfile)

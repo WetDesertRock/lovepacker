@@ -21,7 +21,6 @@ class WinPackager:
         winzipname = self.cache.getFile(self.options['destdir'], osname=osname, version=self.options['loveversion'])
 
         winzippath = os.path.join(self.options['destdir'],winzipname)
-        windirpath = os.path.join(self.options['destdir'],winzipname[:-4])
         finaldirpath = os.path.join(self.options['destdir'],"%s-win%d"%(self.options['gamename'], self.windowsbits))
         exefilepath = os.path.join(finaldirpath,"love.exe")
         gameexepath = os.path.join(finaldirpath,"%s.exe"%self.options['gamename'])
@@ -40,6 +39,8 @@ class WinPackager:
 
         #Unzip the package
         winfile = zipfile2.ZipFile(winzippath, 'r')
+        windirpath = os.path.commonpath(winfile.namelist())
+        windirpath = os.path.join(self.options['destdir'], windirpath)
         winfile.extractall(self.options['destdir'])
         winfile.close()
 
